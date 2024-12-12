@@ -2,6 +2,7 @@ class FaqPageLocators:
 
     def __init__(self, page):
         self.questions_box = page.locator("//div[@class='question-collapse']")
+        self.main_title = page.locator("//div[@class='pricing-main-title']")
         self.first_question = page.locator("(//div[@class='question-collapse']/div)[1]")
         self.second_question = page.locator("(//div[@class='question-collapse']/div)[2]")
         self.third_question = page.locator("(//div[@class='question-collapse']/div)[3]")
